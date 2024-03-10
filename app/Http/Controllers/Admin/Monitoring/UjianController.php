@@ -156,7 +156,7 @@ class UjianController extends Controller
 
     public function update_status_blokir_ujian(Request $request)
     {
-        dd($request->all());
+        //dd($request->all());
         Kehadiran::where('id', $request->id)->update([
             'status_blokir' => $request->status_blokir,
         ]);
